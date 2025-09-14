@@ -1,21 +1,15 @@
 // src/components/Achievements.jsx
 
 import React from 'react';
+import LockImage from '../../src/assets/lock.jpg';
 
 const Achievement = ({ title, image, isLocked }) => (
   <div className="flex flex-col items-center text-center gap-2">
     <div className="relative">
       {!isLocked ? (
-        <>
-          <img alt={`${title} Badge`} className="w-24 h-24 rounded-full object-cover shadow-lg" src={image} />
-          <span className="absolute -bottom-2 -right-2 bg-[var(--secondary-color)] p-1 rounded-full">
-            <span className="material-symbols-outlined text-white">military_tech</span>
-          </span>
-        </>
+        <img alt={`${title} Badge`} className="w-24 h-24 rounded-full object-cover shadow-lg" src={image} />
       ) : (
-        <div className="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
-          <span className="material-symbols-outlined text-4xl text-gray-400">lock</span>
-        </div>
+        <img alt="Locked Achievement" className="w-24 h-24 rounded-full object-cover shadow-lg" src={LockImage} />
       )}
     </div>
     <p className={`text-sm font-medium ${isLocked ? 'text-gray-500' : 'text-[var(--text-primary)]'}`}>

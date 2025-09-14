@@ -22,18 +22,18 @@ function ResourceHub() {
       <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
         <div className="layout-container flex h-full grow flex-col">
           <Header />
-          <main className="px-40 flex flex-1 justify-center py-12">
+          <main className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 2xl:px-40 flex flex-1 justify-center py-6 sm:py-8 lg:py-12">
             <div className="layout-content-container flex flex-col max-w-6xl flex-1">
-              <div className="flex flex-col items-center text-center gap-4 p-4">
-                <h1 className="text-stone-900 text-5xl font-bold leading-tight tracking-tighter">
+              <div className="flex flex-col items-center text-center gap-3 sm:gap-4 p-2 sm:p-4">
+                <h1 className="text-stone-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tighter">
                   Psychoeducational Resource Hub
                 </h1>
-                <p className="text-stone-600 text-lg font-normal leading-normal max-w-3xl">
+                <p className="text-stone-600 text-sm sm:text-base lg:text-lg font-normal leading-normal max-w-3xl px-4">
                   Explore a variety of resources designed to support your mental well-being. Filter by language and resource type to find what suits you best.
                 </p>
               </div>
               <FilterControls />
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 p-2 sm:p-4 mt-4 sm:mt-6 lg:mt-8">
                 {resourceData.map(resource => (
                   <ResourceCard
                     key={resource.id}

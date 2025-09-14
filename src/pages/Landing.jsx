@@ -12,7 +12,7 @@ function LandingPage() {
         <>
             <div
                 className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
-                style={{ fontFamily: '"Plus Jakarta Sans", "Noto Sans", sans-serif' }}
+                style={{ fontFamily: '"Plus Jakarta Sans", "Noto Sans", sans-serif', backgroundColor: '#EFFAF7' }}
             >
                 <div className="layout-container flex h-full grow flex-col">
                     <Header />

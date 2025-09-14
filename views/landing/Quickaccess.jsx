@@ -1,6 +1,8 @@
 
 // src/components/QuickAccess.js
 import React from 'react';
+import Logo from '../../src/assets/logo.svg';
+import Shield from '../../src/assets/shield.svg'
 
 const QuickAccess = () => {
   return (
@@ -15,16 +17,12 @@ const QuickAccess = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <a className="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-[var(--primary-50)] hover:bg-[var(--primary-100)] transition-colors duration-200 text-center" href="#">
-          <span className="material-symbols-outlined text-4xl text-[var(--primary-600)]">
-            local_library
-          </span>
+          <img src={Logo} alt="Resources Logo" className="w-12 h-12" />
           <h3 className="text-xl font-bold text-slate-800">Resources</h3>
           <p className="text-slate-600">Explore our library of articles, tools, and guides.</p>
         </a>
         <a className="flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-[var(--primary-50)] hover:bg-[var(--primary-100)] transition-colors duration-200 text-center" href="#">
-          <span className="material-symbols-outlined text-4xl text-[var(--primary-600)]">
-            shield_lock
-          </span>
+        <img src={Shield} alt="Secured Logo" className="w-12 h-12" />
           <h3 className="text-xl font-bold text-slate-800">Safe Space Mode</h3>
           <p className="text-slate-600">A discreet and private browsing experience.</p>
         </a>

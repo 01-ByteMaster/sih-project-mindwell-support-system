@@ -25,7 +25,7 @@ const tailwindStyles = `
 `;
 
 const PeerSupportPage = () => (
-  <div className="flex min-h-screen flex-col text-gray-800">
+  <div className="flex min-h-screen flex-col text-gray-800 overflow-x-hidden">
     {/* <Head>
       <meta charSet="utf-8" />
       <title>MindWell - Anonymous Peer Support Forum</title>

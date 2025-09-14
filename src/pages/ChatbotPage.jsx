@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../../views/chatbot/Header.jsx';
 import ChatSection from '../../views/chatbot/ChatSection.jsx';
 import Sidebar from '../../views/chatbot/Sidebar.jsx';
+import Footer from '../../views/chatbot/Footer.jsx';
 
 // Define the custom Tailwind CSS styles as a single string
 const tailwindStyles = `
@@ -38,7 +39,7 @@ const tailwindStyles = `
 `;
 
 const ChatbotPage = () => (
-  <div className="relative flex size-full min-h-screen flex-col bg-[var(--background-light)] group/design-root overflow-x-hidden">
+  <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style={{ backgroundColor: '#F0E7F2' }}>
     {/* <Head>
       <meta charSet="utf-8" />
       <title>MindWell - AI Chatbot</title>
@@ -51,12 +52,17 @@ const ChatbotPage = () => (
     </Head> */}
     <div className="layout-container flex h-full grow flex-col">
       <Header />
-      <main className="flex flex-1 justify-center py-8 px-6">
-        <div className="flex w-full max-w-6xl gap-8">
-          <ChatSection />
-          <Sidebar />
+      <main className="flex flex-1 justify-center py-4 px-3 sm:py-6 sm:px-4 lg:py-8 lg:px-6">
+        <div className="flex flex-col lg:flex-row w-full max-w-6xl gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex-1 min-w-0">
+            <ChatSection />
+          </div>
+          <div className="w-full lg:w-80 xl:w-96 flex-shrink-0">
+            <Sidebar />
+          </div>
         </div>
       </main>
+      <Footer />
     </div>
   </div>
 );

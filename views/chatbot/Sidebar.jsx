@@ -9,7 +9,7 @@ const Sidebar = () => (
       <p className="text-[var(--text-secondary)] text-base leading-relaxed mt-2">If you're in immediate danger, please use the button below to get help.</p>
       <div className="mt-4">
         <button className="flex w-full items-center justify-center overflow-hidden rounded-full h-11 px-4 bg-red-500 text-white text-sm font-bold tracking-wide transition-transform hover:scale-105">
-          <span className="material-symbols-outlined mr-2"> call </span>
+          <span className="material-symbols-outlined mr-2"> </span>
           <span className="truncate">Call Helpline Now</span>
         </button>
       </div>

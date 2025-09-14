@@ -27,4 +27,6 @@ const BookingConfirmation = () => {
   );
 };
 
+
+
 export default BookingConfirmation;

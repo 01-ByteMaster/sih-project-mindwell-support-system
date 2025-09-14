@@ -6,7 +6,7 @@ import MoodTrends from './MoodTrends';
 import Achievements from './Achievements';
 
 const MainContent = () => (
-  <main className="flex-1 p-8">
+  <main className="flex-1 p-8" style={{ backgroundColor: '#fff8f8' }}>
     <div className="max-w-4xl mx-auto">
       <header className="mb-10">
         <h2 className="text-4xl font-bold text-[var(--text-primary)]">Daily Mood Tracker</h2>

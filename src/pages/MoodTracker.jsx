@@ -4,6 +4,7 @@ import React from 'react';
 //import Head from 'next/head';
 import Sidebar from '../../views/moodtracker/Sidebar';
 import MainContent from '../../views/moodtracker/MainContent';
+import Footer from '../../views/moodtracker/Footer';
 
 const customStyles = `
   :root {
@@ -29,7 +30,7 @@ const customStyles = `
 `;
 
 const MoodTracker = () => (
-  <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+  <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden bg-transparent">
     {/* <Head>
       <meta charSet="utf-8" />
       <title>Stitch Design</title>
@@ -41,10 +42,11 @@ const MoodTracker = () => (
       <style>{customStyles}</style>
     </Head> */}
     <div className="layout-container flex h-full grow flex-col">
-      <div className="flex flex-1">
+      <main className="flex flex-1">
         <Sidebar />
         <MainContent />
-      </div>
+      </main>
+      <Footer />
     </div>
   </div>
 );

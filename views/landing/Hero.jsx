@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <div className="flex-wrap gap-4 flex justify-center">
             <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-white text-[var(--primary-800)] text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-100 transition-colors duration-200">
-              <span className="truncate">Chatbot Support</span>
+              <span className="truncate">Chat Bot Support</span>
             </button>
             <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 @[480px]:h-14 @[480px]:px-8 bg-white/20 text-white text-base font-bold leading-normal tracking-[0.015em] @[480px]:text-lg @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] backdrop-blur-sm hover:bg-white/30 transition-colors duration-200">
               <span className="truncate">Book a Session</span>

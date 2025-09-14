@@ -86,21 +86,23 @@ const postData = [
 
 const MainContent = () => (
   <main className="flex-grow">
-    <div className="container mx-auto px-6 py-8">
+    <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">Anonymous Peer Support Forum</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-tight text-gray-900">
+            Anonymous Peer Support Forum
+          </h2>
+          <p className="mt-3 sm:mt-4 max-w-2xl mx-auto text-base sm:text-lg text-gray-600 px-4">
             A safe and confidential space to connect with fellow students. Share your experiences, seek advice, and offer support.
           </p>
         </div>
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {postData.map((post) => (
             <Post key={post.id} post={post} />
           ))}
         </div>
-        <div className="mt-8 flex justify-center">
-          <button className="px-6 py-3 bg-[#ea2a33] text-white font-bold rounded-full hover:bg-opacity-90 transition-colors">
+        <div className="mt-6 sm:mt-8 flex justify-center">
+          <button className="px-4 sm:px-6 py-2 sm:py-3 bg-[#ea2a33] text-white font-bold rounded-full hover:bg-opacity-90 transition-colors text-sm sm:text-base">
             Load More Posts
           </button>
         </div>

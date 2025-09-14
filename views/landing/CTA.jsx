@@ -11,7 +11,7 @@ const CTA = () => {
             Ready to Prioritize Your Mental Health?
           </h1>
           <p className="text-slate-600 text-lg font-normal leading-normal max-w-[720px] mx-auto">
-            Join MindfulU today and take the first step towards a healthier, happier you.
+            Join MindWell today and take the first step towards a healthier, happier you.
           </p>
         </div>
         <div className="flex flex-1 justify-center">

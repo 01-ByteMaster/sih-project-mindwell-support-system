@@ -27,9 +27,9 @@ const MoodTracker = () => (
         <span className="text-sm font-medium">Very Happy</span>
       </button>
     </div>
-    <textarea className="w-full rounded-xl border-gray-200 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] p-4 text-base text-[var(--text-primary)] placeholder:text-gray-400 min-h-[120px] transition-shadow duration-200" placeholder="Add a note about your day..."></textarea>
+    <textarea className="w-full rounded-xl border-2 border-gray-300 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] p-4 text-base text-[var(--text-primary)] placeholder:text-gray-400 min-h-[120px] transition-shadow duration-200 resize-none" placeholder="Add a note about your day..."></textarea>
     <div className="text-right mt-4">
-      <button className="bg-[var(--primary-color)] text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[var(--primary-color)] focus:ring-opacity-50">
+      <button className="text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-opacity-50" style={{ backgroundColor: '#FFB6C1' }}>
         Save Mood
       </button>
     </div>
