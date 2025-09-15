@@ -32,7 +32,7 @@ const Header = () => (
     <div className="flex flex-1 justify-end gap-6">
       <nav className="flex items-center gap-8">
         <Link to="/" className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors">Home</Link>
-        <a className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Resources</a>
+        <Link to="/resources" className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors">Resources</Link>
         <a className="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors" href="#">Community</a>
       </nav>
       <div className="flex items-center gap-4">

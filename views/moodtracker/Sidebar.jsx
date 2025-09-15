@@ -95,7 +95,8 @@ const Sidebar = () => {
           />
           <span className="font-medium">Activities</span>
         </button>
-        <button 
+        <Link 
+          to="/resources"
           onClick={() => handleItemClick('Resources')}
           className={`flex items-center gap-4 px-4 py-3 rounded-full transition-colors ${
             activeItem === 'Resources' 
@@ -111,8 +112,9 @@ const Sidebar = () => {
             style={{ filter: activeItem === 'Resources' ? 'brightness(0) invert(1)' : 'none' }}
           />
           <span className="font-medium">Resources</span>
-        </button>
-        <button 
+        </Link>
+        <Link 
+          to="/peer-support"
           onClick={() => handleItemClick('Community')}
           className={`flex items-center gap-4 px-4 py-3 rounded-full transition-colors ${
             activeItem === 'Community' 
@@ -128,7 +130,7 @@ const Sidebar = () => {
             style={{ filter: activeItem === 'Community' ? 'brightness(0) invert(1)' : 'none' }}
           />
           <span className="font-medium">Community</span>
-        </button>
+        </Link>
       </nav>
       <div className="mt-auto text-center">
         <img alt="Calm illustration" className="mx-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1hhJTM_AQ9PWVVJ-48GxXh2gZx1yltH0S8emWusXZBc7NI_xwSJwhSiyzKjTzuFukoo5hQEiunF1m5vHIeD7j_n4GCAaGmFAmDn05-xhFHwqsnTarPvxPmb6l7bmacEgANP6i7YZRylrrFr28LzuD43wki2bK5axqEZhaeeDmtosOps0pMAZCfOgbdpShV6GdG5tmNhbNEYJV4gIpEugLvNXTHf4OBIYnhTVW6DXysL9M9U5eH83092J9vnJx-zMSQ8YrkPphPA" />
